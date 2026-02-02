@@ -12,6 +12,11 @@ import Dashboard from "./pages/Dashboard";
 import Profile from "./components/Profile";
 import Settings from "./components/Settings";
 import Effect from "./components/Effect";
+import Products from "./pages/Products";
+import ProductDetail from "./pages/ProductDetail";
+
+
+
 
 const App = () => {
   return (
@@ -23,8 +28,9 @@ const App = () => {
         <Route path="contact" element={<Contact />} />
         <Route path="about-us" element={<Navigate to="about" />} />
         <Route path= "user/:id" element={<User/>}/>
+        <Route path="/productdetail/:id" element={<ProductDetail/>}/>
         <Route path="register" element={<Register/>}/>
-
+        <Route path="/products" element={<Products/>}/>
         <Route path="dashboard" element={<Dashboard/>}>
         <Route path="profile" element={<Profile/>}/>
         <Route path="settings" element={<Settings/>}/>
