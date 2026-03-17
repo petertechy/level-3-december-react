@@ -14,6 +14,8 @@ import Settings from "./components/Settings";
 import Effect from "./components/Effect";
 import Products from "./pages/Products";
 import ProductDetail from "./pages/ProductDetail";
+import Signup from "./pages/Signup";
+import SignIn from "./pages/SignIn";
 
 
 
@@ -35,6 +37,8 @@ const App = () => {
         <Route path="profile" element={<Profile/>}/>
         <Route path="settings" element={<Settings/>}/>
         </Route>
+        <Route path="signup" element={<Signup/>}/>
+        <Route path="signin" element={<SignIn/>}/>
 
         <Route path="effect" element={<Effect/>}/>
 
