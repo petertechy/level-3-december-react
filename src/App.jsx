@@ -16,11 +16,13 @@ import Products from "./pages/Products";
 import ProductDetail from "./pages/ProductDetail";
 import Signup from "./pages/Signup";
 import SignIn from "./pages/SignIn";
+import UserDashboard from "./pages/UserDashboard";
 
 
 
 
 const App = () => {
+  let token = localStorage.token
   return (
     <>
     <Navbar/>
@@ -39,6 +41,7 @@ const App = () => {
         </Route>
         <Route path="signup" element={<Signup/>}/>
         <Route path="signin" element={<SignIn/>}/>
+        <Route path="user-dashboard" element={token ? <UserDashboard/> : <Navigate to="/signin" />}/>
 
         <Route path="effect" element={<Effect/>}/>
 
