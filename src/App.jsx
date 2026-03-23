@@ -17,6 +17,8 @@ import ProductDetail from "./pages/ProductDetail";
 import Signup from "./pages/Signup";
 import SignIn from "./pages/SignIn";
 import UserDashboard from "./pages/UserDashboard";
+import Effect1 from "./pages/Effect1";
+import UploadFile from "./pages/UploadFile";
 
 
 
@@ -44,6 +46,8 @@ const App = () => {
         <Route path="user-dashboard" element={token ? <UserDashboard/> : <Navigate to="/signin" />}/>
 
         <Route path="effect" element={<Effect/>}/>
+        <Route path="effect1" element={<Effect1/>}/>
+        <Route path="file" element={<UploadFile/>}/>
 
         /**WildCard Route */
         <Route path="*" element={<NotFound />} />
