@@ -21,6 +21,8 @@ const UserDashboard = () => {
         .then((response)=>{
             if(!response.data.status){
                 navigate("/signin")
+            }else{ 
+                console.log(response)
             }
         })
         .catch((error)=>{
